@@ -1,8 +1,17 @@
 build:
-  backend: {}
-  webapp: {}
-  devops: {}
-  e2e-tests: {}
+  backend:
+    resources:
+      requests: { memory: "100Mi", cpu: "0.1" }
+  webapp:
+    resources:
+      requests: { memory: "100Mi", cpu: "0.1" }
+  devops:
+    resources:
+      requests: { memory: "100Mi", cpu: "0.1" }
+  e2e-tests:
+    resources:
+      requests: { memory: "100Mi", cpu: "0.1" }
+
 test:
   "backend-units":
     container:
